@@ -1,0 +1,14 @@
+# Ambientes virtuais
+venv/
+env/
+
+# Arquivos de banco de dados locais
+*.db
+tasks.db
+
+# Configurações locais secretas
+.env
+
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
