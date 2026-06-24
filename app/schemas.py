@@ -1,10 +1,10 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Optional
 from datetime import date
 
 class CriarTarefa(BaseModel):
-    titulo: str
-    descricao: Optional[str] = ""
+    titulo: str = Field(max_lenght=100)
+    descricao: Optional[str] = Field("", max_length=500)
     prioridade: Optional[str] = "media"
     prazo: Optional[date] = None
 

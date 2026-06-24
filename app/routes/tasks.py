@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
-from database import get_db
-from models import Tarefa
-from schemas import CriarTarefa, AtualizarTarefa, RespostaTarefa
+from app.database import get_db
+from app.models import Tarefa
+from app.schemas import CriarTarefa, AtualizarTarefa, RespostaTarefa
 
 roteador = APIRouter(prefix="/tarefas", tags=["tarefas"])
 
